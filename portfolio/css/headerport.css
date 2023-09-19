@@ -1,0 +1,176 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    --light_blue: #56dcfc;
+    --blue: #197dff;
+    --fade_light_blue: rgba(86, 220, 252, 0.15);
+    --light_gray: #8ea9bf;
+    --white: #f6f9fc;
+    --fade_white: rgb(191, 182, 216);
+    --dark_blue: #101d30;
+    --fade_dark_blue: rgba(16, 29, 48, 0.9);
+    --black_title: #2b3954;
+    --black_text: #425466;
+    --dark_purple: rgb(41, 41, 85);
+    --purple: rgb(52, 52, 102);
+}
+#loading_screen 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b1b2e;
+    z-index: 10000;
+}
+
+#header_div
+{
+    display: flex;
+    position: fixed;
+    pointer-events: none; 
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition:  height 0.4s ease-in-out, top 0.5s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out, top 0.5s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+    -o-transition: height 0.4s ease-in-out, box-shadow 0.4s ease-in-out, top 0.5s ease-in-out;
+    transition: height 0.4s ease-in-out, box-shadow 0.4s ease-in-out, top 0.5s ease-in-out;
+    transition: height 0.4s ease-in-out, box-shadow 0.4s ease-in-out, top 0.5s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
+#header
+{
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 50px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 29, 48, 0);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    -webkit-transition: background-color 0.4s ease-in-out, -webkit-backdrop-filter 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, -webkit-backdrop-filter 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out, -webkit-backdrop-filter 0.4s ease-in-out;
+}
+
+#header .nav
+{
+
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+    height: 39.5px;
+
+}
+.logo a 
+{
+    display: flex;
+    pointer-events: all;
+    width: 35px;
+    height: 35px;
+}
+#header .logo
+{
+    display: flex;
+}
+#header .menu
+{
+    display: flex;
+    margin: 0px 10px;
+}
+#header .menu li
+{
+        display: flex;
+        margin: 0px 10px;
+}
+#header .in_animation
+{       
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+        -webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+        -o-transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+#header .menu .not_button
+{
+    -webkit-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+
+}
+#header .menu a
+{
+    display: flex;
+    pointer-events: all;
+    padding: 10px 15px;
+    font-family: "raleway", "sans-serif";
+    font-size: 15px;
+    color: var(--white);
+    text-decoration: none;
+
+    
+    color: white; /* couleur du texte */
+    padding: 10px 24px; /* taille du bouton */
+    border: none; /* pas de bordure */
+    cursor: pointer; /* curseur de la souris en forme de main */
+
+}
+#header .menu a:hover
+{
+    color: #ba7af6;
+}
+#header .menu ol
+{
+    display: flex;
+}
+#loading_screen
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b1b2e;
+    z-index: 10000;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
